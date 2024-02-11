@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body,
+html {
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* For background image */
+.bg{
+    background-image: url("slider-meal-four.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Meal Details Container */
+#meal-details-container{
+    background-image: linear-gradient(brown,pink);
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+#meal-details-container img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    margin-top: 2%;
+}
+
+#meal-details-container h1{
+    font-size: 1.4rem;
+    margin-bottom: 2%;
+}
+
+#meal-details-container p{
+    font-size: 1rem;
+    width: 80%;
+    margin-bottom: 5%;
+}

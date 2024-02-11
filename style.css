@@ -1,0 +1,184 @@
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body,
+html {
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.bg {
+  background-image: url("https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+/* Navigation Section */
+#navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+}
+
+#logo img {
+  height: 4rem;
+  width: 4rem;
+  border: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px black;
+}
+
+#logo h1 {
+  font-size: 1rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#logo a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Search Input */
+#search-input {
+  background-image: linear-gradient(yellow, red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  margin-top: 15%;
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 5px black;
+  margin-bottom: 5%;
+}
+
+#search-input h1 {
+  font-size: 1.4rem;
+  padding: 1rem;
+  width: 80%;
+}
+
+#search {
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+  background-color: inherit;
+  border-color: white;
+  color: white;
+  margin-bottom: 5%;
+  width: 80%;
+  display: none;
+}
+
+#search::placeholder {
+  color: black;
+}
+
+#search-btn {
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+  background-color: inherit;
+  border-color: white;
+  color: white;
+  margin-bottom: 5%;
+  width: 40%;
+  font-weight: bolder;
+}
+
+#search-btn:hover {
+  background-color: orangered;
+  color: rgb(5, 5, 121);
+  box-shadow: 5px 5px 5px black;
+}
+
+#search-btn i {
+  margin-left: 25%;
+}
+
+/* Meal Container */
+#parent-meal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#parent-meal-container button {
+  font-size: 1rem;
+  padding: 0.4rem;
+  font-weight: bolder;
+  background-color: rgb(245, 68, 4);
+  color: white;
+  border-radius: 0.8rem;
+  width: 8rem;
+  height: 3rem;
+  margin-bottom: 5%;
+  border-color: white;
+}
+
+#parent-meal-container button:hover {
+  background-color: rgb(216, 77, 8);
+  box-shadow: 5px 5px 5px black;
+  color: rgb(4, 4, 92);
+}
+
+#parent-meal-container h2 {
+  font-size: 3rem;
+  background-color: rgb(216, 77, 8);
+  color: white;
+}
+.child-meal-container {
+  background-image: linear-gradient(orange, rgb(253, 5, 47));
+  color: white;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 25rem;
+  margin-bottom: 5%;
+}
+
+.child-meal-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+  padding: 1rem;
+  color: black;
+  width: 20rem;
+  text-align: center;
+}
+/* Common Classes */
+.orange-bg {
+  background-color: rgb(255 68 0);
+}
+
+.move-pos {
+  margin-top: 2%;
+}
+
+.move-pos a {
+  text-decoration: none;
+  color: rgb(14, 14, 14);
+  font-weight: bolder;
+}
+
+.change-font-size {
+  font-size: 1.6rem;
+}
+
+.meal-img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 2rem;
+  margin-top: 7%;
+  padding: 1rem;
+}
